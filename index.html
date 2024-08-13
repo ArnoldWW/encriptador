@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="py-5 max-w-[800px] w-[90%] mx-auto flex justify-center gap-2"
+    >
+      <h1 class="text-center font-bold text-2xl">Encriptador con</h1>
+      <img src="javascript.svg" alt="logo js" />
+    </header>
+
+    <section class="max-w-[800px] w-[90%] mx-auto">
+      <textarea
+        id="inputText"
+        type="text"
+        placeholder="Texto aquí (Solo letras minúsculas y sin acentos.)"
+        class="border w-full min-h-52 p-5 rounded"
+      ></textarea>
+
+      <div class="grid md:grid-cols-2 gap-5 mt-5">
+        <button
+          id="btnEncrypt"
+          class="bg-blue-500 text-white p-3 font-bold hover:opacity-80 transition-opacity rounded"
+        >
+          Encriptar
+        </button>
+        <button
+          id="btnDecrypt"
+          class="border-blue-500 border-2 p-3 text-blue-500 font-bold hover:opacity-80 transition-opacity rounded"
+        >
+          Desencriptar
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="max-w-[800px] w-[90%] mx-auto p-5 border mt-5 rounded bg-gray-100"
+    >
+      <h2 class="text-xl font-bold mb-2">Resultado</h2>
+      <p id="resultText">El resultado de su texto encriptado aparecerá aquí</p>
+      <button
+        id="btnCopy"
+        class="bg-blue-500 text-white p-3 font-bold hover:opacity-80 transition-opacity rounded mt-5 hidden"
+      >
+        Copiar Texto
+      </button>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
